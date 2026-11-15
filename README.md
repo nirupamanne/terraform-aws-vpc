@@ -177,25 +177,44 @@ Resource-specific tag variables are also available in `variable.tf`.
 | `vpc_id` | Displays the ID of the created VPC. |
 | `azs_info` | Displays the available AWS Availability Zones. |
 
-## Cleanup – Delete AWS Resources
+## Cleanup – Destroy AWS Resources
 
-After completing the practice, remove the resources to avoid unnecessary AWS charges.
+After completing the practice, remove the AWS resources to avoid unnecessary charges.
 
-Run the following command from the root Terraform working directory:
+Run the following command from the root Terraform working directory (`vpc-test`):
 
 ```bash
 terraform destroy -auto-approve
----
----
-## Outputs:
+```
+This command destroys the AWS resources created by Terraform without asking for confirmation.
 
+## Terraform Outputs
+
+After successfully creating the infrastructure, run:
+
+```bash
+terraform output
+```
+
+**Output:**
+
+```text
 azs_info = tolist([
   "us-east-1a",
   "us-east-1b",
 ])
 vpc_id = "vpc-01c1e84241be455aa"
+```
 
-nirup@LAPTOP-3HA2P95B UCRT64 /c/Nirupa/JoinDevOps/repos/vpc-test (main)
+**Working Directory:**
 
-*Reference Output*
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/4bcb531d-402d-44c6-89ee-5ed61275618a" />
+```text
+/c/Nirupa/JoinDevOps/repos/vpc-test
+```
+
+## Reference Output
+
+The below screenshot shows the Terraform output after successfully creating the VPC infrastructure.
+
+![Terraform VPC Output](https://github.com/user-attachments/assets/4bcb531d-402d-44c6-89ee-5ed61275618a)
+
