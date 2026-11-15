@@ -186,11 +186,8 @@ Run the following command from the root Terraform working directory:
 ```bash
 terraform destroy -auto-approve
 ---
-
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/4bcb531d-402d-44c6-89ee-5ed61275618a" />
-
 ---
-Outputs:
+## Outputs:
 
 azs_info = tolist([
   "us-east-1a",
@@ -200,3 +197,5 @@ vpc_id = "vpc-01c1e84241be455aa"
 
 nirup@LAPTOP-3HA2P95B UCRT64 /c/Nirupa/JoinDevOps/repos/vpc-test (main)
 
+*Reference Output*
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/4bcb531d-402d-44c6-89ee-5ed61275618a" />
